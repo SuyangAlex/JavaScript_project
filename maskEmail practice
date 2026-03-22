@@ -1,0 +1,11 @@
+function maskEmail(email) {
+  let account = email.slice(0, email.indexOf("@"));
+  let domain = email.slice(email.indexOf("@"));
+
+  let maskedAcc = account[0] + "*".repeat(account.length - 2) + account[account.length-1];
+
+  return maskedAcc + domain;
+}
+
+const email = "apple.pie@example.com";
+console.log(maskEmail(email));
