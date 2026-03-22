@@ -1,3 +1,4 @@
+// maskEmail 功能是把使用者 input 的 mail 碼掉中間部分，僅留下頭尾和網域。
 function maskEmail(email) {
   let account = email.slice(0, email.indexOf("@"));
   let domain = email.slice(email.indexOf("@"));
