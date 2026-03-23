@@ -1,0 +1,15 @@
+// 這是閏年計算機，此函數接收一個參數(年份)，最後會回傳這個年份是不是閏年
+
+let year = 2000;
+function isLeapYear(year) {
+  if(year%100 == 0 && year%400 != 0) {
+    return `${year} is not a leap year.` 
+  } else if(year%4==0){
+    return `${year} is a leap year.`
+  } else {
+    return `${year} is a leap year.`
+  }
+}
+
+let result = isLeapYear(year);
+console.log(result);
